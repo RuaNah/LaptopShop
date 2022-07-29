@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@drawable/background_login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="244dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="87dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="@string/shopname"
+        android:textColor="#ffffff"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/custombutton"
+        android:gravity="center"
+        android:hint="@string/hint_uname"
+        android:textColor="#FFFBF6"
+        android:textColorHint="#FFFBF6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/custombutton"
+        android:gravity="center"
+        android:hint="@string/hint_pass"
+        android:inputType="numberPassword"
+        android:textColor="#FFFBF6"
+        android:textColorHint="#FFFBF6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="17dp"
+        android:buttonTint="#FFFBF6"
+        android:hint="#FFFBF6"
+        android:text="Keep me Signed in "
+        android:textColor="#FFFBF6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/custombutton2"
+        android:text="@string/signin"
+        android:textAllCaps="false"
+        android:textColor="#FFFBF6"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/custombutton2"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="#FFFBF6"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignin" />
+
+    <TextView
+        android:id="@+id/forget_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="138dp"
+        android:text="Forget Password"
+        android:textColor="#FFFBF6"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_finger" />
+
+    <Button
+        android:id="@+id/btn_finger"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/custombutton2"
+        android:text="@string/login_withfinger"
+        android:textAllCaps="false"
+        android:textColor="#FFFBF6"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+</androidx.constraintlayout.widget.ConstraintLayout>

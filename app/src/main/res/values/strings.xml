@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Laptop</string>
+    <string name="title_activity_dell">DellActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="signin">Signin</string>
+    <string name="register">Register</string>
+    <string name="hint_uname">Username</string>
+    <string name="hint_pass">Password</string>
+    <string name="shopname">LAPTOP SHOP</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_confirmpass">Confirm Password</string>
+    <string name="btnCreate">Create</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="hint_fullname">Fullname</string>
+    <string name="login_withfinger">Login with finger</string>
+</resources>

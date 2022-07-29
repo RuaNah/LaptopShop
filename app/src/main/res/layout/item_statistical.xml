@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:id="@+id/statis_name"
+                android:text="Tên khách hàng"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/statis_date"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="Ngày đặt hàng">
+                </TextView>
+                <TextView
+                    android:id="@+id/statis_total"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="1,000,000"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

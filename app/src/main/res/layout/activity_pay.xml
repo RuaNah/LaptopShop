@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PayActivity">
+    <Toolbar
+        android:id="@+id/toolbar_pay"
+        app:layout_constraintTop_toTopOf="parent"
+        android:title="Thanh toán"
+        android:background="@color/colortrangchu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </Toolbar>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_Pay"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:elevation="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:textSize="15sp"
+                    android:text="Tổng tiền "
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:id="@+id/total_pay"
+                    android:textSize="15sp"
+                    android:text="1,000,000"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:background="#8E8383"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout_Pay"
+        app:layout_constraintTop_toBottomOf="@id/cv_Pay"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_pay"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:hint="Nhập số điện thoại"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_pay"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:hint="Tên người nhận"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_pay"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/location_pay"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:hint="Địa chỉ giao hàng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+        </LinearLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnPay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Đặt hàng"
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
